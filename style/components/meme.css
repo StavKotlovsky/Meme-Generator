@@ -1,0 +1,27 @@
+.meme-container {
+  display: none;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+canvas {
+  border-radius: 15px;
+}
+
+.edit-btn {
+  width: 510px;
+  height: 500px;
+  margin-left: 90px;
+  /* box-shadow: 1px 5px 0 #bbc4d1d2, inset 0 5px 0 #ffffffa4; */
+  border-radius: 30px;
+  background-color: var(--clr-trans);
+}
+
+.edit-btn input {
+  /* margin-inline-start: 10px; */
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 450px;
+  height: 50px;
+}

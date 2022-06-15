@@ -1,0 +1,25 @@
+.main-header {
+  padding: 20px;
+  background-image: var(--clr-header);
+  border-radius: 35px;
+  margin-bottom: 18px;
+}
+/* 
+.header-btn:hover {
+  background-color: var(--clr-white);
+} */
+.header-btn {
+  font-size: 20px;
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+  color: var(--clr-white);
+}
+
+h1 {
+  width: 150px;
+}
+
+.btn-container {
+  column-gap: 70px;
+}

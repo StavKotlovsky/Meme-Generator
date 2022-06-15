@@ -1,0 +1,18 @@
+.gallery-container {
+  border-radius: 50px;
+  background-color: var(--clr-grey2);
+  padding: 30px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+  grid-auto-flow: row;
+}
+
+.img {
+  border-radius: 20px;
+}

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Poppins;
+  src: url(/fonts/Poppins-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--clr-gray);
+}
+html {
+  font-family: Poppins;
+}
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}

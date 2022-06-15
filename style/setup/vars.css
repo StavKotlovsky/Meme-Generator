@@ -1,0 +1,8 @@
+:root {
+  /* --clr-H: linear-gradient(to bottom right, #f64f8b, #f88558); */
+  --clr-header: linear-gradient(to left, #33be6d, #0c98b9);
+  --clr-white: #fff;
+  --clr-grey2: #383b42;
+  --clr-gray: #22252c;
+  --clr-trans: hsla(218, 27%, 94%, 0.11);
+}
