@@ -7,6 +7,9 @@
   padding: 0;
   list-style-type: none;
 }
+.hidden {
+  display: none !important;
+}
 .flex.align-center {
   align-items: center;
 }
@@ -17,8 +20,16 @@
 .flex.space-around {
   justify-content: space-around;
 }
-/* 
-.flex.content-center {
-  justify-content: flex-start;
-  right: 20;
-} */
+.flex.column {
+  flex-direction: column;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+.flex.justify-center {
+  justify-content: center;
+}
+
+.main-layout {
+  max-width: 1700px;
+}

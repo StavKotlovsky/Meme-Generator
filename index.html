@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="style/main.css">
   <title>Meme Generator</title>
+  <script src="https://kit.fontawesome.com/d860ed65f1.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="onInit()">
@@ -15,19 +16,18 @@
     <h1><img src="./logo/LOGO.png" alt=""></h1>
     <div class="btn-container flex">
       <button onclick="onGalleryPage(this)" class=" header-btn gallery-btn">Gallery</button>
-      <button class="header-btn Memes-btn">Memes</button>
-      <button class="header-btn About-btn">About</button>
+      <button class="header-btn Memes-btn memes" onclick="renderSavedImgs()">Memes</button>
     </div>
   </header>
 
 
   <section class="gallery-container grid justify-center">
-
+    <section class="saved-meme"></section>
   </section>
 
 
 
-  <section class="meme-container justify-center flex">
+  <section class="meme-container main-layout hidden flex wrap">
 
     <div class="canvas-container">
       <div class="grid-meme">
@@ -35,10 +35,45 @@
         </canvas>
       </div>
     </div>
-    <div class="edit-btn">
-      <input oninput="onChangeTxt(this.value)" type="text" id="txt" name="txt">
+    <div class="edit-btn flex column">
+      <input oninput="onChangeTxt(this.value)" type="text" id="txt" class="txt-input" placeholder="Enter Text Here...">
+      <div class="txt-controll flex justify-center">
+        <button class="switch-btn" onclick="onSwitchLine()">&#8645;</button>
+        <button class="add-line-btn" onclick="onAddLine()">+</button>
+        <button class="remove-btn" onclick="onRemoveSelectedLine()"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+      <div class="edit-txt flex justify-center grid-btn">
+        <button class="size-btn" onclick="onSizeChange(+2)">A+</button>
+        <button class="size-btn" onclick="onSizeChange(-2)">A-</button>
+        <button class="align-left" onclick="onAlignTxt('left')"><i class="fa-solid fa-align-left"></i></button>
+        <button class="align-middle" onclick="onAlignTxt('middle')"><i class="fa-solid fa-align-center"></i></button>
+        <button class=align-right onclick="onAlignTxt('right')"><i class="fa-solid fa-align-right"></i></button>
+        <button class="save-meme" onclick="onSaveMeme()"><i class="fa-solid fa-floppy-disk"></i></button>
+        <label for="color" class="input-color flex align-center justify-center">
+          <i class="fa-solid fa-palette"></i>
+          <input oninput="onChangeColor(this.value)" type="color" id="color">
+        </label>
+        <select class="select-font flex" onchange="onChangeFont(this.value)">
+          <option value=" monospace">Monospace</option>
+          <option value=" Impact">Impact</option>
+          <option value=" sans-serif">Sans serif</option>
+          <option value=" Ariel Narrow">Ariel Narrow</option>
+        </select>
+      </div>
+      <section class=" sticker flex stickers-container"></section>
+      <div class="download-btn flex justify-center">
+        <a href="#" onclick="onDownloadMeme(this)" download="my-meme.jpg"><i class="fa-solid fa-download"> Download</i>
+        </a>
+      </div>
     </div>
   </section>
+
+  <footer class="main-footer flex column">
+    <div class="space-between justify-center">
+      <img class="footer-logo" src="./logo/LOGO.png">
+    </div>
+    <small>&copy; Stav Kotlovsky-Coding Academy</small>
+  </footer>
 
 
 

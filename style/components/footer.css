@@ -1,0 +1,10 @@
+.main-footer img {
+  width: 130px;
+}
+
+.main-footer {
+  padding: 10px;
+  background-image: var(--clr-grey2);
+  justify-content: center;
+  align-items: center;
+}

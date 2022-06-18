@@ -1,5 +1,5 @@
 .gallery-container {
-  border-radius: 50px;
+  border-radius: 18px;
   background-color: var(--clr-grey2);
   padding: 30px 40px;
 }
@@ -15,4 +15,10 @@
 
 .img {
   border-radius: 20px;
+  box-shadow: 1px 3px 0 #242425d2;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.img:hover {
+  transform: scale(1.1);
 }

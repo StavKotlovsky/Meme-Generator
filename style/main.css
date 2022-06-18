@@ -1,14 +1,12 @@
 /* setup */
 @import "setup/vars.css";
-/* @import "setup/font-faces.css"; */
 
 /* base */
 @import "basic/base.css";
-/* @import "basic/buttons.css"; */
 @import "basic/helpers.css";
 
 /* components */
 @import "components/header.css";
 @import "components/meme.css";
 @import "components/gallery.css";
-/* @import "components/modal.css"; */
+@import "components/footer.css";

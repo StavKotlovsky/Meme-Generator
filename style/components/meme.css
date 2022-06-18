@@ -1,27 +1,159 @@
 .meme-container {
-  display: none;
+  background-image: url(/imgs/Forme_2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: end;
+  display: flex;
+  column-gap: 60px;
+  row-gap: 12px;
   justify-content: center;
   margin-top: 50px;
 }
 
 canvas {
+  box-shadow: 0px 0px 1px 4px rgb(72 75 80);
   border-radius: 15px;
 }
 
 .edit-btn {
   width: 510px;
   height: 500px;
-  margin-left: 90px;
-  /* box-shadow: 1px 5px 0 #bbc4d1d2, inset 0 5px 0 #ffffffa4; */
-  border-radius: 30px;
   background-color: var(--clr-trans);
+  border-radius: 1rem;
+  padding: 10px;
+  max-width: 525px;
 }
 
-.edit-btn input {
-  /* margin-inline-start: 10px; */
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-left: 30px;
+.edit-btn .txt-input {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(69, 68, 68);
+  text-transform: uppercase;
+  padding: 7px 0;
+  border-radius: 40px;
+  border: 0;
+  font-family: poppins;
+  text-align: center;
+  margin-top: 16px;
+  border-top: 5px solid var(--clr-white);
+  border-bottom: 5px solid var(--clr-LGrey);
+}
+
+.edit-btn button,
+.input-color {
+  cursor: pointer;
+  font-family: poppins;
+  font-size: 25px;
+  height: 54px;
+  width: 54px;
+  border-radius: 16px;
+  border: 0;
+}
+.input-color {
+  font-weight: bold;
+  color: #22252c;
+  box-shadow: 1px 3px 0 rgba(92, 92, 92, 0.55), inset 0 3px 0 rgba(255, 255, 255, 0.58);
+  background-color: #fff;
+  position: relative;
+}
+
+.input-color input {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.input-color i {
+  position: absolute;
+}
+
+.edit-txt {
   width: 450px;
+  margin-left: 20px;
+  border-radius: 16px;
+  padding: 17px 36px 22px 20px;
+  background-color: #19a59f;
+}
+
+.edit-btn .txt-controll > *:not(:last-child) {
+  margin-inline-end: 5px;
+}
+
+.grid-btn {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+}
+.edit-txt button {
+  font-weight: bold;
+  color: #22252c;
+  box-shadow: 1px 3px 0 rgba(92, 92, 92, 0.55), inset 0 3px 0 rgba(255, 255, 255, 0.58);
+  background-color: var(--clr-white);
+}
+
+.edit-btn .txt-controll {
+  column-gap: 20px;
+  margin-top: 19px;
+  align-content: center;
+  margin-bottom: 28.4px;
+}
+
+.download-btn {
   height: 50px;
+  margin-top: 20px;
+  box-shadow: 1px 6px 0 #632687, inset 0 2px 0 #ffffff;
+  border-radius: 15px;
+  background-color: #8f44bb;
+}
+
+.fa-download {
+  margin-top: 20px;
+  color: var(--clr-white);
+}
+
+.switch-btn {
+  color: var(--clr-white);
+  font-weight: bold;
+  background-color: #0dc8da;
+  box-shadow: 1px 3px 0 #048b97, inset 0 3px 0 rgba(255, 255, 255, 0.58);
+}
+.add-line-btn {
+  color: var(--clr-white);
+  font-weight: bold;
+  box-shadow: 1px 3px 0 #015d33, inset 0 3px 0 rgba(255, 255, 255, 0.58);
+  background-color: #1ee78d;
+}
+
+.remove-btn {
+  color: var(--clr-white);
+  font-weight: bold;
+  box-shadow: 1px 3px 0 #8c0606, inset 0 3px 0 rgba(255, 255, 255, 0.58);
+  background-color: #e02727;
+}
+
+.select-font {
+  text-transform: uppercase;
+  font-size: 20px;
+  grid-column: 1/4;
+  grid-row: 2;
+  border-radius: 15px;
+  color: #22252c;
+  font-weight: bold;
+}
+
+.stickers-container button {
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.stickers-container {
+  justify-content: center;
+  margin-left: 40px;
+  width: 400px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 50px;
 }
