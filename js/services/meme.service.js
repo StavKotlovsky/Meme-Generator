@@ -8,14 +8,16 @@ let gImgNextId = 1
 
 const NEW_LINE_TXT = 'Enter text'
 
-let gMeme
-
 let gStickers = [
   '<img class="sticker" src="./Stickers/5.png">',
   '<img class="sticker" src="./Stickers/6.png">',
   '<img class="sticker" src="./Stickers/7.png">',
   '<img class="sticker" src="./Stickers/8.png">'
 ]
+
+
+let gMeme
+
 
 function createMeme(selectedImgId) {
   gMeme = {
@@ -40,8 +42,12 @@ function getMeme() {
   return gMeme
 }
 
-function getStickers() {
-  return gStickers
+function setSticker() {
+  const line = gMeme.lines
+  const currText = line[gMeme.selectedLineIdx]
+  currText.txt = gStickers
+  console.log(currText)
+
 }
 
 function setImg(id) {
@@ -51,9 +57,7 @@ function setImg(id) {
 function getSavedMemes() {
   return gSaveMeme
 }
-function setLineMeasurement(width, height) {
 
-}
 function setSize(diff) {
   const line = gMeme.lines
   const currSize = line[gMeme.selectedLineIdx]
@@ -65,7 +69,6 @@ function setSize(diff) {
 function setLineTxt(txt) {
   const line = gMeme.lines
   const currText = line[gMeme.selectedLineIdx]
-  if (txt > gCanvas.length) return
   currText.txt = txt
   return currText.txt
 }

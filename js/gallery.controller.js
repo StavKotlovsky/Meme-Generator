@@ -52,6 +52,7 @@ function renderSavedImgs() {
 }
 
 function onImgSelect(id) {
+  document.querySelector('.txt-input').value = ''
   showMemePage()
   initMeme(id)
 }

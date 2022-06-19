@@ -31,8 +31,7 @@ function renderMeme() {
 }
 
 function renderStickers() {
-  const stickers = getStickers()
-  const strHTMLs = stickers.map((sticker) =>
+  const strHTMLs = gStickers.map((sticker) =>
     `<button onclick="onStickerSelect(this)">${sticker}</button>`
   )
   document.querySelector('.stickers-container').innerHTML = strHTMLs.join('')
